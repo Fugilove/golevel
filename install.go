@@ -26,7 +26,7 @@ func createProject(projectName string) {
 	fmt.Println("Creating project:", projectName)
 
 	// Clone the GoLevel repository
-	cmd := exec.Command("git", "clone", "https://github.com/yourusername/golevel", projectName)
+	cmd := exec.Command("git", "clone", "https://github.com/Fugilove/golevel", projectName)
 	err := cmd.Run()
 	if err != nil {
 		fmt.Println("Error cloning repository:", err)
