@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoLevel</title>
+    <title>Welcome to GoLevel</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <div class="container">
         <img src="/images/logo.png" alt="GoLevel Logo" class="logo">
-        <h1>Welcome to GoLevel Framework</h1>
+        <h1>Welcome to GoLevel!</h1>
+        <div class="users">
+            <h2>Users:</h2>
+            <ul>
+                {{range .Users}}
+                    <li>{{.Name}} ({{.Email}})</li>
+                {{end}}
+            </ul>
+        </div>
+        <a href="https://github.com/yourusername/golevel" class="github-link">View on GitHub</a>
     </div>
 </body>
 </html>
