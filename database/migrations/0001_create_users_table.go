@@ -1,9 +1,9 @@
-
 package migrations
 
 import (
-	"gorm.io/gorm"
 	"golevel/app/models"
+
+	"gorm.io/gorm"
 )
 
 func CreateUsersTable(db *gorm.DB) {

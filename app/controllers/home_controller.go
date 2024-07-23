@@ -1,9 +1,8 @@
-
 package controllers
 
 import (
-	"net/http"
 	"html/template"
+	"net/http"
 )
 
 type HomeController struct {
